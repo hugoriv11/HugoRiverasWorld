@@ -21,7 +21,6 @@ public class FactoryRaza implements AbstractFactory{
 
     @Override
     public Raza getRaza(String type) {
-// ============= switch con los metodos de la creacion de las razas IMPORTANTE HACER===========================
         switch(type){
             case "Nazis":
                 return new Nazis();

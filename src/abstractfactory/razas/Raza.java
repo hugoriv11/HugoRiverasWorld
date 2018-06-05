@@ -10,5 +10,9 @@ package abstractfactory.razas;
  * @author HugoJr. <Hugo Rivera at 00161417@uca.edu.sv>
  */
 public interface Raza {
+    public int recurso1 = 100;
+    public int recurso2 = 200;
+    public int recurso3 = 300;
+    
     void crear();
 }

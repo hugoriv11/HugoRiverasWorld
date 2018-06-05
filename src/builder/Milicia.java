@@ -11,10 +11,21 @@ package builder;
  */
 public class Milicia implements MiliciaPlan{
     private int vida;
+    private int precio;
 
     @Override
     public void setVida(int vida) {
         this.vida = vida;
+    }
+
+    @Override
+    public void atacar() {
+        System.out.println("Atacando...");
+    }
+
+    @Override
+    public void setPrecio(int precio) {
+        System.out.println("Crear la milicia tiene precio de "+precio);
     }
     
 }

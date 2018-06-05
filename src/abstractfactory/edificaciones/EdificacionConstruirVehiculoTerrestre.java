@@ -11,6 +11,7 @@ package abstractfactory.edificaciones;
  */
 public class EdificacionConstruirVehiculoTerrestre implements Edificacion{
     public int vida;
+    public int precio;
 
     @Override
     public void construir() {

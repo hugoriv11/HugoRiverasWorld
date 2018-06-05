@@ -11,4 +11,6 @@ package builder;
  */
 public interface MiliciaPlan {
     public void setVida(int vida);
+    public void setPrecio(int precio);
+    public void atacar();
 }
