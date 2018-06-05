@@ -22,20 +22,14 @@ public class FactoryRaza implements AbstractFactory{
     @Override
     public Raza getRaza(String type) {
 // ============= switch con los metodos de la creacion de las razas IMPORTANTE HACER===========================
-//        switch(type){
-//            case "Edificacion recolectora de recursos 1":
-//                return new EdificacionRecolectarRecurso1();
-//            case "Edificacion recolectora de recursos 2":
-//                return new EdificacionRecolectarRecurso2();
-//            case "Edificacion recolectora de recursos 3":
-//                return new EdificacionRecolectarRecurso3();
-//            case "Edificacion entrenadora de milicia":
-//                return new EdificacionEntrenarMilicia();
-//            case "Edificacion constructora vehiculos terrestres":
-//                return new EdificacionConstruirVehiculoTerrestre();
-//            case "Edificacion constructora vehiculos aereos":
-//                return new EdificacionConstruirVehiculoAereo();
-//        }
-//        return null;
-//    }
+        switch(type){
+            case "Nazis":
+                return new Nazis();
+            case "Aliados":
+                return new Aliados();
+            case "Japos":
+                return new Japos();
+        }
+        return null;
+    }
 }

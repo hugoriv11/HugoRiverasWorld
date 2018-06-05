@@ -6,6 +6,7 @@
 package abstractfactory;
 
 import abstractfactory.edificaciones.FactoryEdificacion;
+import abstractfactory.razas.FactoryRaza;
 
 /**
  *
@@ -16,8 +17,8 @@ public class FactoryProducer {
         switch(type){
             case "Edificacion":
                 return new FactoryEdificacion();
-//            case "Raza":
-//                return new FactoryRaza(); //FactoryRaza aun no hecho porque no he hecho las razas IMPORTANTE======================
+            case "Raza":
+                return new FactoryRaza();
         }
         return null;
     }

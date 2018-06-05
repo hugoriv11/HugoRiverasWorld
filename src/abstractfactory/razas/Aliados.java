@@ -9,6 +9,11 @@ package abstractfactory.razas;
  *
  * @author HugoJr. <Hugo Rivera at 00161417@uca.edu.sv>
  */
-public interface Raza {
-    void crear();
+public class Aliados implements Raza{
+    //atri
+    @Override
+    public void crear() {
+        System.out.println("Raza Aliados elegida");
+    }
+    
 }
