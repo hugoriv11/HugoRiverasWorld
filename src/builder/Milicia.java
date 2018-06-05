@@ -9,6 +9,12 @@ package builder;
  *
  * @author HugoJr. <Hugo Rivera at 00161417@uca.edu.sv>
  */
-public class Milicia {
+public class Milicia implements MiliciaPlan{
+    private int vida;
+
+    @Override
+    public void setVida(int vida) {
+        this.vida = vida;
+    }
     
 }

@@ -10,5 +10,18 @@ package builder;
  * @author HugoJr. <Hugo Rivera at 00161417@uca.edu.sv>
  */
 public class MiliciaBuilder {
+    private Worker worker;
+    
+    public MiliciaBuilder(Worker worker){
+        this.worker = worker;
+    }
+    
+    public void BuildAMilicia(){
+        this.worker.crearMilicia();
+    }
+    
+    public Milicia getMilicia(){
+        return this.worker.getMilicia();
+    }
     
 }

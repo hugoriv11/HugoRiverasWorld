@@ -10,5 +10,6 @@ package builder;
  * @author HugoJr. <Hugo Rivera at 00161417@uca.edu.sv>
  */
 public interface Worker {
-    
+    public void crearMilicia();
+    public Milicia getMilicia();
 }

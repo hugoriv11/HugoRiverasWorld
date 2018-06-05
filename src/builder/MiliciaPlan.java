@@ -10,5 +10,5 @@ package builder;
  * @author HugoJr. <Hugo Rivera at 00161417@uca.edu.sv>
  */
 public interface MiliciaPlan {
-    
+    public void setVida(int vida);
 }

@@ -11,6 +11,13 @@ package abstractfactory.edificaciones;
  * quiera entrenar
  * @author HugoJr. <Hugo Rivera at 00161417@uca.edu.sv>
  */
-public class EdificacionEntrenarMilicia {
+public class EdificacionEntrenarMilicia implements Edificacion{
+    public int vida;
+
+    @Override
+    public void construir() {
+        //vida = 10;
+        System.out.println("Edificacion entrenadora de milicia construida " + "vida: (" + vida + ")");
+    }
     
 }

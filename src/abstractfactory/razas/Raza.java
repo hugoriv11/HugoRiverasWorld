@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package abstractfactory.edificaciones;
+package abstractfactory.razas;
 
 /**
  *
  * @author HugoJr. <Hugo Rivera at 00161417@uca.edu.sv>
  */
-public interface Edificacion {
-    void construir();
+public interface Raza {
+    
 }

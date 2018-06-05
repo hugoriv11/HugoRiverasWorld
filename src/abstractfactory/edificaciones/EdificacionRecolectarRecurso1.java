@@ -9,6 +9,14 @@ package abstractfactory.edificaciones;
  *
  * @author HugoJr. <Hugo Rivera at 00161417@uca.edu.sv>
  */
-public class EdificacionRecolectarRecurso1 {
+public class EdificacionRecolectarRecurso1 implements Edificacion{
+    public int vida;
+
+    @Override
+    public void construir() {
+        //vida = 10;
+        System.out.println("Edificacion recolectora de recursos 1 construida " + "vida: (" + vida + ")");
+    }
+    
     
 }

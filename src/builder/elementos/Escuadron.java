@@ -5,10 +5,29 @@
  */
 package builder.elementos;
 
+import builder.Milicia;
+import builder.Worker;
+
 /**
  *
  * @author HugoJr. <Hugo Rivera at 00161417@uca.edu.sv>
  */
-public class Escuadron {
+public class Escuadron implements Worker{
+    private Milicia milicia;
+    private int vida;
+
+    public Escuadron() {
+        this.milicia = new Milicia();
+    }
+    
+    @Override
+    public void crearMilicia() {
+        System.out.println("Se crea el escuadron de ataque");
+    }
+
+    @Override
+    public Milicia getMilicia() {
+        return this.milicia;
+    }
     
 }
