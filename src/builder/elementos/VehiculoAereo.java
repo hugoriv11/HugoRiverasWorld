@@ -5,30 +5,29 @@
  */
 package builder.elementos;
 
-import builder.Milicia;
 import builder.Vehiculo;
-import builder.WorkerMilicia;
+import builder.WorkerVehiculo;
 
 /**
  *
  * @author HugoJr. <Hugo Rivera at 00161417@uca.edu.sv>
  */
-public class Escuadron implements WorkerMilicia{
-    private Milicia milicia;
+public class VehiculoAereo implements WorkerVehiculo{
+    private Vehiculo vehiculo;
     private int vida = 100;
-
-    public Escuadron() {
-        this.milicia = new Milicia();
-    }
     
-    @Override
-    public void crearMilicia() {
-        System.out.println("Se crea el escuadron de ataque " + "// vida " +vida);
+    public VehiculoAereo(){
+        this.vehiculo = new Vehiculo();
     }
 
     @Override
-    public Milicia getMilicia() {
-        return this.milicia;
+    public void crearVehiculo() {
+        System.out.println("Se crea Avion Caza "  + "// vida " +vida);
+    }
+
+    @Override
+    public Vehiculo getVehiculo() {
+        return this.vehiculo;
     }
     
 }

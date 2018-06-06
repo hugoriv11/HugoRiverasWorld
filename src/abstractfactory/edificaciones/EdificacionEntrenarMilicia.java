@@ -17,8 +17,8 @@ public class EdificacionEntrenarMilicia implements Edificacion{
 
     @Override
     public void construir() {
-        //vida = 10;
-        System.out.println("Edificacion entrenadora de milicia construida " + "vida: (" + vida + ")");
+        vida = 100;
+        System.out.println("Edificacion entrenadora de milicia construida " + "// vida: (" + vida + ")");
     }
     
 }

@@ -13,14 +13,14 @@ package abstractfactory.razas;
 public class Aliados implements Raza{
     //atri
     
-    public int recurso1;
-    public int recurso2;
-    public int recurso3;
+    public int recurso1 = Raza.recurso1;
+    public int recurso2 = Raza.recurso2;
+    public int recurso3 = Raza.recurso3;
     
     @Override
     public void crear() {
         System.out.println("Raza Aliados elegida");
-        System.out.println("RECURSOS INICIALES " + "Recurso 1: " + recurso1 + "|" + "Recurso 2: " + recurso2 + "|" + "Recurso 3: " + recurso3);
+        System.out.println("RECURSOS INICIALES " + "Recurso 1: " + recurso1 + " | " + "Recurso 2: " + recurso2 + " | " + "Recurso 3: " + recurso3);
 
     }
     

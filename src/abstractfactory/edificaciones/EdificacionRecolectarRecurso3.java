@@ -14,8 +14,8 @@ public class EdificacionRecolectarRecurso3 implements Edificacion{
 
     @Override
     public void construir() {
-        //vida = 10;
-        System.out.println("Edificacion recolectora de recursos 3 construida " + "vida: (" + vida + ")");
+        vida = 100;
+        System.out.println("Edificacion recolectora de recursos 3 construida " + "// vida: (" + vida + ")");
     }
     
 }

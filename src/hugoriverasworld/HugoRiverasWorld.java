@@ -8,6 +8,7 @@ package hugoriverasworld;
 import abstractfactory.AbstractFactory;
 import abstractfactory.FactoryProducer;
 import abstractfactory.edificaciones.Edificacion;
+import abstractfactory.razas.Raza;
 
 import builder.Milicia;
 import builder.MiliciaBuilder;
@@ -20,22 +21,32 @@ public class HugoRiverasWorld {
 
     public static void main(String[] args) {
         //hacer menu para elegir que crear
-        AbstractFactory factory;
+        //AbstractFactory factory;
         
-        factory = FactoryProducer.getFactory("Edificacion");
-        Edificacion edificacion = factory.getEdificacion("Edificacion constructora vehiculos aereos");
-        edificacion.construir();
+        //PARA EL MENU, ESTE CODIFO DE ABAJO PUEDE SER LA OPC 1 DE CREAR VEHICULOS AEREOS
+//        factory = FactoryProducer.getFactory("Edificacion");
+//        Edificacion edificacion = factory.getEdificacion("Edificacion constructora vehiculos aereos");
+//        edificacion.construir();
+//        
+//        factory = FactoryProducer.getFactory("Raza");
+//        Raza raza = factory.getRaza("Nazis");
+//        raza.crear();
+        
+        
+//        MenuRaza m  = MenuRaza.getInstance();
+//        m.showMain();
+        
+        MenuMenu mm = MenuMenu.getInstance();
+        mm.showMain();
         
         
         
-        
-        
-        Escuadron creador = new Escuadron();
-        MiliciaBuilder miliciabuilder1 = new MiliciaBuilder(creador);
-        
-        miliciabuilder1.BuildAMilicia();
-        
-        Milicia milicia1 = miliciabuilder1.getMilicia();
+//        Escuadron creador = new Escuadron();
+//        MiliciaBuilder miliciabuilder1 = new MiliciaBuilder(creador);
+//        
+//        miliciabuilder1.BuildAMilicia();
+//        
+//        Milicia milicia1 = miliciabuilder1.getMilicia();
     }
     
 }

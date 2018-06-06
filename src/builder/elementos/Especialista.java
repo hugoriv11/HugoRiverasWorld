@@ -6,15 +6,15 @@
 package builder.elementos;
 
 import builder.Milicia;
-import builder.Worker;
+import builder.WorkerMilicia;
 
 /**
  *
  * @author HugoJr. <Hugo Rivera at 00161417@uca.edu.sv>
  */
-public class Especialista implements Worker{
+public class Especialista implements WorkerMilicia{
     private Milicia milicia;
-    private int vida;
+    private int vida = 100;
 
     public Especialista() {
         this.milicia = new Milicia();
@@ -22,7 +22,7 @@ public class Especialista implements Worker{
     
     @Override
     public void crearMilicia() {
-        System.out.println("TERMINATOR creado");
+        System.out.println("TERMINATOR creado " + "// vida " +vida);
     }
 
     @Override

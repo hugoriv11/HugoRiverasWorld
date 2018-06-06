@@ -3,15 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package abstractfactory.razas;
+package builder;
 
 /**
  *
  * @author HugoJr. <Hugo Rivera at 00161417@uca.edu.sv>
  */
-public interface Raza {
-    public int recurso1 = 100;
-    public int recurso2 = 200;
-    public int recurso3 = 300;
-    void crear();
+public interface WorkerVehiculo {
+    public void crearVehiculo();
+    public Vehiculo getVehiculo();
 }

@@ -15,8 +15,8 @@ public class EdificacionConstruirVehiculoTerrestre implements Edificacion{
 
     @Override
     public void construir() {
-        //vida = 10;
-        System.out.println("Edificacion constructora vehiculos terrestres construida " + "vida: (" + vida + ")");
+        vida = 100;
+        System.out.println("Edificacion constructora vehiculos terrestres construida " + "// vida: (" + vida + ")");
     }
     
 }

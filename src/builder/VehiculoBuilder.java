@@ -9,19 +9,18 @@ package builder;
  *
  * @author HugoJr. <Hugo Rivera at 00161417@uca.edu.sv>
  */
-public class MiliciaBuilder {
-    private WorkerMilicia worker;
+public class VehiculoBuilder {
+    private WorkerVehiculo worker;
     
-    public MiliciaBuilder(WorkerMilicia worker){
+    public VehiculoBuilder (WorkerVehiculo worker){
         this.worker = worker;
     }
     
-    public void BuildAMilicia(){
-        this.worker.crearMilicia();
+    public void BuildAVehiculo(){
+        this.worker.crearVehiculo();
     }
     
-    public Milicia getMilicia(){
-        return this.worker.getMilicia();
+    public Vehiculo getVehiculo(){
+        return this.worker.getVehiculo();
     }
-    
 }

@@ -9,7 +9,7 @@ package builder;
  *
  * @author HugoJr. <Hugo Rivera at 00161417@uca.edu.sv>
  */
-public interface Worker {
-    public void crearMilicia();
-    public Milicia getMilicia();
+public interface VehiculoPlan {
+    public void setVida(int vida);
+    public void setPrecio(int precio);
 }
