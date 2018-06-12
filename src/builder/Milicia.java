@@ -20,6 +20,7 @@ public class Milicia implements MiliciaPlan{
 
     @Override
     public void atacar() {
+        //acceder a las edificaciones de otro jugador para seleccionar cual atacar
         System.out.println("Atacando...");
     }
 

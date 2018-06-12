@@ -23,7 +23,7 @@ public class HugoRiverasWorld {
         //hacer menu para elegir que crear
         //AbstractFactory factory;
         
-        //PARA EL MENU, ESTE CODIFO DE ABAJO PUEDE SER LA OPC 1 DE CREAR VEHICULOS AEREOS
+        //PARA EL MENU, ESTE CODIGO DE ABAJO PUEDE SER LA OPC 1 DE CREAR VEHICULOS AEREOS
 //        factory = FactoryProducer.getFactory("Edificacion");
 //        Edificacion edificacion = factory.getEdificacion("Edificacion constructora vehiculos aereos");
 //        edificacion.construir();
@@ -33,12 +33,12 @@ public class HugoRiverasWorld {
 //        raza.crear();
         
         
-//        MenuRaza m  = MenuRaza.getInstance();
-//        m.showMain();
-        
-        MenuMenu mm = MenuMenu.getInstance();
-        mm.showMain();
-        
+        MenuRaza m  = MenuRaza.getInstance();
+        m.showMain();
+
+//        MenuMenu mm = MenuMenu.getInstance();
+//        mm.showMain();
+      
         
         
 //        Escuadron creador = new Escuadron();

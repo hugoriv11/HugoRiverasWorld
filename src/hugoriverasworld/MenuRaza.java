@@ -8,6 +8,8 @@ package hugoriverasworld;
 import abstractfactory.AbstractFactory;
 import abstractfactory.FactoryProducer;
 import abstractfactory.razas.Raza;
+import java.util.InputMismatchException;
+import java.util.Scanner;
 import javax.swing.JOptionPane;
 
 /**
@@ -31,43 +33,62 @@ public class MenuRaza {
         return instance;
     }
     
-    private void opciones(){
-        String opciones = "1 ) Nazis\n" + "2 ) Aliados\n" + "3 ) Japos\n" + "4 ) Salir\n";
-    }
+//    private void opciones(){
+//        String opciones = "1 ) Nazis\n" + "2 ) Aliados\n" + "3 ) Japos\n" + "4 ) Salir\n";
+//    }
     
     public void showMain(){
-        int opcion = 0;
+        int opcion;
         boolean m = false; 
+        Scanner sn = new Scanner(System.in);
         AbstractFactory factory;
         
-        try {
-                opcion = Integer.parseInt(JOptionPane.showInputDialog("Ingrese una opcion ", null));
-            } catch (NumberFormatException e) {
-                opcion = 5;
-            }
+//        try {
+//                opcion = Integer.parseInt(JOptionPane.showInputDialog("Ingrese una opcion ", null));
+//            } catch (NumberFormatException e) {
+//                opcion = 5;
+//            }
         
-        while(!m){
-            switch(opcion){
-                case 1:
-                    factory = FactoryProducer.getFactory("Raza");
-                    Raza razaNazis = factory.getRaza("Nazis");
-                    razaNazis.crear();
-                    break;
-                case 2:
-                    factory = FactoryProducer.getFactory("Raza");
-                    Raza razaAliados = factory.getRaza("Aliados");
-                    razaAliados.crear();
-                    break;
-                case 3:
-                    factory = FactoryProducer.getFactory("Raza");
-                    Raza razaJapos = factory.getRaza("Japos");
-                    razaJapos.crear();
-                    break;
-                case 4:
-                    return;
-                default:
-                    System.err.println("ERROR! Ingresa una opcion valida por favor");
+        while(!m){     
+            System.out.println("\n1 ) Nazis\n" + "2 ) Aliados\n" + "3 ) Japos\n" + "4 ) Salir\n");
+            
+            try {
+                System.out.println("Escribe una de las opciones por favor");
+                opcion = sn.nextInt();
+                
+                switch(opcion){
+                    case 1:
+                        System.out.println("\n");
+                        factory = FactoryProducer.getFactory("Raza");
+                        Raza razaNazis = factory.getRaza("Nazis");
+                        razaNazis.crear();
+                        break;            
+                    case 2:
+                        System.out.println("\n");
+                        factory = FactoryProducer.getFactory("Raza");
+                        Raza razaAliados = factory.getRaza("Aliados");
+                        razaAliados.crear();
+                        break;
+                    case 3:
+                        System.out.println("\n");
+                        factory = FactoryProducer.getFactory("Raza");
+                        Raza razaJapos = factory.getRaza("Japos");
+                        razaJapos.crear();
+                        break;
+                    case 4:
+                        System.out.println("\nChaoooo....");
+                        m = true;
+                        break;
+                        //return;
+                    default:
+                        System.err.println("ERROR! Ingresa una opcion valida por favor");
+                }   
+                
+            } catch (InputMismatchException e) {
+                System.out.println("Inserta un numero por favor");
+                sn.next();
             }
         }
     }
 }
+
