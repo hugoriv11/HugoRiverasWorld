@@ -15,6 +15,7 @@ import builder.WorkerVehiculo;
 public class VehiculoTerrestre implements WorkerVehiculo{
     private Vehiculo vehiculo;
     private int vida = 100;
+    private int precio = 50;
     
     public VehiculoTerrestre(){
         this.vehiculo = new Vehiculo();
@@ -22,7 +23,8 @@ public class VehiculoTerrestre implements WorkerVehiculo{
 
     @Override
     public void crearVehiculo() {
-        System.out.println("Se crea Tanque "  + "// vida " +vida);
+        vehiculo.getPrecio(precio);
+        System.out.println("Se crea Tanque "  + "// vida " +vida+" // precio "+vehiculo.getPrecio(precio));
     }
 
     @Override

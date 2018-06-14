@@ -13,12 +13,13 @@ package abstractfactory.edificaciones;
  */
 public class EdificacionEntrenarMilicia implements Edificacion{
     public int vida;
-    public int precio;
+    public int precio = 300;
 
     @Override
     public void construir() {
         vida = 100;
-        System.out.println("Edificacion entrenadora de milicia construida " + "// vida: (" + vida + ")");
+        System.out.println("Edificacion constructora vde milicia construida " + "// vida: (" + vida + ")"
+                + " // precio " + precio);
     }
     
 }

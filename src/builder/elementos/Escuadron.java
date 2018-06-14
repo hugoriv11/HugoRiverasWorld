@@ -16,6 +16,7 @@ import builder.WorkerMilicia;
 public class Escuadron implements WorkerMilicia{
     private Milicia milicia;
     private int vida = 100;
+    private int precio = 80;
 
     public Escuadron() {
         this.milicia = new Milicia();
@@ -23,7 +24,7 @@ public class Escuadron implements WorkerMilicia{
     
     @Override
     public void crearMilicia() {
-        System.out.println("Se crea el escuadron de ataque " + "// vida " +vida);
+        System.out.println("Se crea el escuadron de ataque " + "// vida " +vida+ " // precio "+milicia.getPrecio(precio));
     }
 
     @Override

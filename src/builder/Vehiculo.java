@@ -13,14 +13,34 @@ public class Vehiculo implements VehiculoPlan{
     private int vida;
     private int precio;
 
+//    @Override
+//    public void setVida(int vida) {
+//        this.vida = vida;
+//    }
+//
+//    @Override
+//    public void setPrecio(int precio) {
+//        System.out.println("Crear el vehiculo tiene precio de "+precio);
+//    }
+    
+//    @Override
+//    public void getVida(int vida) {
+//        vida = 100;
+//    }
+//
+//    @Override
+//    public void getPrecio(int precio) {
+//        precio = 10;
+//    }
+
     @Override
-    public void setVida(int vida) {
-        this.vida = vida;
+    public int getVida(int vida) {
+        return vida;
     }
 
     @Override
-    public void setPrecio(int precio) {
-        System.out.println("Crear el vehiculo tiene precio de "+precio);
+    public int getPrecio(int precio) {
+        return precio;
     }
     
 }

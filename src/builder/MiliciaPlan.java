@@ -10,7 +10,7 @@ package builder;
  * @author HugoJr. <Hugo Rivera at 00161417@uca.edu.sv>
  */
 public interface MiliciaPlan {
-    public void setVida(int vida);
-    public void setPrecio(int precio);
+    public int getVida(int vida);
+    public int getPrecio(int precio);
     public void atacar();
 }

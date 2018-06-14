@@ -88,44 +88,7 @@ public class Menu {
         }
         //bande = false;
     }
-    
-        
-        
-        
-        
-        
-        
-        
-//        boolean flag = true;
-//        boolean bande = true;
-//        
-//        
-//        
-//        while(flag){
-//            jugador = (int)(Math.random() * 2) + 1;
-//            if(jugador == 1){
-//                System.out.println("JUGADOR 1 ==========================");
-//                System.out.println("INGRESA TU ALIAS");
-//                alias = sn.next();
-//                //jugador=2;
-//                menus();
-//                //bande = false;
-//            }
-//            else {
-//                System.out.println("JUGADOR 2 ==========================");
-//                System.out.println("INGRESA TU ALIAS");
-//                alias = sn.next();
-//                //jugador=1;
-//                menus();
-//            }
-//            //flag = false;
-//        }
-//        flag = false;
-//        }
-        
-    
-    
-
+     
         /**
          * Se ejecuta el primer menu para elegir Raza
          * y luego se ejecuta el segundo menu

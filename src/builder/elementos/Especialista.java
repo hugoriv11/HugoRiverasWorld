@@ -15,6 +15,7 @@ import builder.WorkerMilicia;
 public class Especialista implements WorkerMilicia{
     private Milicia milicia;
     private int vida = 100;
+    private int precio = 90;
 
     public Especialista() {
         this.milicia = new Milicia();
@@ -22,7 +23,7 @@ public class Especialista implements WorkerMilicia{
     
     @Override
     public void crearMilicia() {
-        System.out.println("TERMINATOR creado " + "// vida " +vida);
+        System.out.println("TERMINATOR creado " + "// vida " +vida+ " // precio "+milicia.getPrecio(precio));
     }
 
     @Override
