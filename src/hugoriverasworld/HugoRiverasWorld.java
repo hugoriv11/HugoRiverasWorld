@@ -19,6 +19,5 @@ public class HugoRiverasWorld {
 //        MenuMenu mm = MenuMenu.getInstance();
 //        mm.showMain();
       
-    }
-    
+    }  
 }
